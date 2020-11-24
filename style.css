@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #15110F;
+  overflow: hidden;
+}
+#card{
+  position: absolute;
+  top: 38vh;
+  right: 25%;
+  width: 35%;
+  height: 410px;
+  border-radius: 5px;
+  background: #6A2D00;
+  padding: 20px;
+  color: #15110F;
+  font-family: arial;
+  animation: animate 6.6s ease-in-out infinite;
+}
+@keyframes animate {
+  50%{
+    box-shadow:  -5px -5px 8px #FFB317,
+                10px 10px 15px #000;
+  }
+}
+#card h1{
+  font-size: 42px;
+  font-weight: 700;
+}
+#card p{
+  padding: 20px 0;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#card a{
+  background: #15110F;
+  color: #6A2D00;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 5px;
+  animation: animate 6.6s ease-in-out infinite;
+}
+.bulb{
+  position: absolute;
+  top: -10px;
+  left: 12%;
+}
+.bulb img{
+  height: 360px;
+  transform-origin: center top;
+  animation: swing 3.3s ease-in-out infinite alternate;
+}
+@keyframes swing {
+  0%{
+    transform: rotate(18deg);
+  }
+  100%{
+    transform: rotate(-18deg);
+  }
+}
